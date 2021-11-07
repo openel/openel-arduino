@@ -1,0 +1,29 @@
+{
+  "name": "OpenEL",
+  "version": "3.2.0",
+  "description": "",
+  "keywords": "actuators, sensors, control, device",
+  "authors":
+  {
+    "name":  "JASA(Japan Embedded Systems Technology Association)",
+    "url":   "https://github.com/openel",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/openel/openel-arduino.git"
+  },
+  "homepage": "http://openel.github.io",
+  "export": {
+    "exclude": [
+      "linux",
+      "extras",
+      "tests"
+    ]
+  },
+  "frameworks": "*",
+  "platforms": "*",
+  "examples": "examples/*/*.ino"
+}
+

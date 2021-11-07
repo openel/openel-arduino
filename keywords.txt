@@ -1,0 +1,59 @@
+#############################################
+# Syntax Coloring Map for OpenEL
+#############################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+openEL			KEYWORD1
+HAL_OK			KEYWORD1
+HAL_ERROR		KEYWORD1
+HALFLOAT_T		KEYWORD1
+HALRETURNCODE_T 	KEYWORD1
+HAL_LINKED_LIST_T	KEYWORD1
+HALID_T			KEYWORD1
+HALPROPERTY_T		KEYWORD1
+HALCOMPONENT_T		KEYWORD1
+HALOBSERVER_T		KEYWORD1
+HALTIMEOBSERVER_T	KEYWORD1
+HALEVENTTIMER_T		KEYWORD1
+HALACTUATOR_T		KEYWORD1
+HALSENSOR_T		KEYWORD1
+ReturnCode		KEYWORD1
+HALId			KEYWORD1
+Property		KEYWORD1
+HALComponent		KEYWORD1
+HALObserver		KEYWORD1
+TimerObserver		KEYWORD1
+EventTimer		KEYWORD1
+Actuator		KEYWORD1
+Sensor			KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+Init			KEYWORD2
+ReInit			KEYWORD2
+Finalize		KEYWORD2
+AddObserver		KEYWORD2
+RemoveObserver		KEYWORD2
+GetProperty		KEYWORD2
+GetTime			KEYWORD2
+StartTimer		KEYWORD2
+StopTimer		KEYWORD2
+SetEventPeriod		KEYWORD2
+SetValue		KEYWORD2
+GetValue		KEYWORD2
+GetValueList		KEYWORD2
+GetTimedValueList	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+HAL_REQUEST_POSITION_CONTROL	LITERAL1
+HAL_REQUEST_VELOCITY_CONTROL	LITERAL1
+HAL_REQUEST_TORQUE_CONTROL	LITERAL1
+
