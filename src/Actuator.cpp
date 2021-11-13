@@ -36,7 +36,7 @@
 Actuator::Actuator(HALId halId)
 {
     hALId = halId;
-    hALComponent = HalCreate(hALId.vendorId, hALId.productId, hALId.instanceId);
+    hALComponent = HalCreate(hALId.deviceKindId, hALId.vendorId, hALId.productId, hALId.instanceId);
 }
 
 Actuator::~Actuator()

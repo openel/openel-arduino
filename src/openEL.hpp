@@ -87,7 +87,7 @@ typedef struct HalFncTbl_st
     /* 0x1F */ ReturnCode (*pFncDeviceVendor1F)(HALComponent*, HAL_ARGUMENT_T*,HAL_ARGUMENT_DEVICE_T *); /**< Device Vendor Function */
 } HAL_FNCTBL_T;
 
-HALComponent* HalCreate(int32_t vendorID, int32_t productID, int32_t instanceID);
+HALComponent* HalCreate(int32_t deviceKindId, int32_t vendorID, int32_t productID, int32_t instanceID);
 void HalDestroy(HALComponent *halComponent);
 
 ReturnCode HalInit(HALComponent *halComponent);

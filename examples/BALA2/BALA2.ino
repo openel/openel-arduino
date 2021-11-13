@@ -80,25 +80,25 @@ void setup() {
   Blynk.begin(auth);
 
   HALId halid1, halid2, halid3, halid4;
-  halid1.deviceKindId = 1;
-  halid1.vendorId = 9;
-  halid1.productId = 1;
-  halid1.instanceId = 1;
+  halid1.deviceKindId = 0x1;
+  halid1.vendorId = 0xA;
+  halid1.productId = 0x1;
+  halid1.instanceId = 0x1;
 
-  halid2.deviceKindId = 1;
-  halid2.vendorId = 9;
-  halid2.productId = 1;
-  halid2.instanceId = 2;
+  halid2.deviceKindId = 0x1;
+  halid2.vendorId = 0xA;
+  halid2.productId = 0x1;
+  halid2.instanceId = 0x2;
 
-  halid3.deviceKindId = 2;
-  halid3.vendorId = 9;
-  halid3.productId = 2;
-  halid3.instanceId = 1;
+  halid3.deviceKindId = 0x2;
+  halid3.vendorId = 0xA;
+  halid3.productId = 0x1;
+  halid3.instanceId = 0x1;
 
-  halid4.deviceKindId = 2;
-  halid4.vendorId = 9;
-  halid4.productId = 3;
-  halid4.instanceId = 1;
+  halid4.deviceKindId = 0xD;
+  halid4.vendorId = 0xA;
+  halid4.productId = 0x1;
+  halid4.instanceId = 0x1;
 
   motor_l = new Actuator(halid1);
   motor_r = new Actuator(halid2);
