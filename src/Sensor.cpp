@@ -36,7 +36,7 @@
 Sensor::Sensor(HALId halId)
 {
     hALId = halId;
-    hALComponent = HalCreate(hALId.vendorId, hALId.productId, hALId.instanceId);
+    hALComponent = HalCreate(hALId.deviceKindId, hALId.vendorId, hALId.productId, hALId.instanceId);
 }
 
 Sensor::~Sensor()

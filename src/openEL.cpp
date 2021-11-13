@@ -3,7 +3,7 @@
 HAL_HANDLER_T HalHandlerTbl[HAL_SZ_HANDLER_TBL];
 static int32_t HalIdxHandlerTbl;
 
-HALComponent* HalCreate(int32_t vendorID, int32_t productID, int32_t instanceID)
+HALComponent* HalCreate(int32_t deviceKindID, int32_t vendorID, int32_t productID, int32_t instanceID)
 {
     int32_t i;
     int32_t idx = -1;
@@ -26,7 +26,7 @@ HALComponent* HalCreate(int32_t vendorID, int32_t productID, int32_t instanceID)
     idx = -1;
     for (i = 0; i < hal_szRegTbl; i++)
     {
-	if ((vendorID == HalRegTbl[i].vendorID) && (productID == HalRegTbl[i].productID))
+	if ((deviceKindID == HalRegTbl[i].deviceKindID && vendorID == HalRegTbl[i].vendorID) && (productID == HalRegTbl[i].productID))
 	{
 	    idx = i;
 	    break;
@@ -37,7 +37,7 @@ HALComponent* HalCreate(int32_t vendorID, int32_t productID, int32_t instanceID)
 
     pHalComponent = new HALComponent;
     pHalComponent->handle = HalIdxHandlerTbl;
-    pHalComponent->hALId.deviceKindId = pReg->deviceKindID;
+    pHalComponent->hALId.deviceKindId = deviceKindID;
     pHalComponent->hALId.vendorId = vendorID;
     pHalComponent->hALId.productId = productID;
     pHalComponent->hALId.instanceId = instanceID;

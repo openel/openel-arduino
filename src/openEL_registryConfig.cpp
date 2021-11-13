@@ -38,9 +38,9 @@
 #include "openEL_SensorM5StackGrayBMM150.hpp"
 
 const HAL_REG_T HalRegTbl[] = {
-    {0x0001, 0x00000009, 0x00000001, &HalActuatorM5StackGrayBMM150Tbl, sizeof(Actuator) },
-    {0x0002, 0x00000009, 0x00000002, &HalSensorM5StackGrayMPU6886Tbl,  sizeof(Sensor)   },
-    {0x0002, 0x00000009, 0x00000003, &HalSensorM5StackGrayBMM150Tbl,   sizeof(Sensor)   },
+    {0x0001, 0x0000000A, 0x00000001, &HalActuatorM5StackGrayBMM150Tbl, sizeof(Actuator) },
+    {0x0002, 0x0000000A, 0x00000001, &HalSensorM5StackGrayMPU6886Tbl,  sizeof(Sensor)   },
+    {0x000D, 0x0000000A, 0x00000001, &HalSensorM5StackGrayBMM150Tbl,   sizeof(Sensor)   },
 };
 
 const int32_t hal_szRegTbl = sizeof(HalRegTbl)/sizeof(HAL_REG_T);
