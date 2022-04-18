@@ -107,7 +107,7 @@ ReturnCode SensorM5StackGrayBMM150::fncGetValLst(HALComponent *pHALComponent, fl
     *(*valueList+4) = magRawY;
     *(*valueList+5) = magRawZ;
 
-    **num = DATA_NUM;
+    **num = BMM150_DATA_NUM;
 
     return HAL_OK;
 }
@@ -125,7 +125,7 @@ ReturnCode SensorM5StackGrayBMM150::fncGetTimedValLst(HALComponent *pHALComponen
     *(*valueList+5) = magRawZ;
 
     **timeValue = (unsigned int)millis();
-    **num = DATA_NUM;
+    **num = BMM150_DATA_NUM;
 
     return HAL_OK;
 }
