@@ -157,7 +157,7 @@
 
 #define BMM150_GET_BITS_POS_0(reg_data, bitname)  (reg_data & (bitname##_MSK))
 
-#define DATA_NUM 6
+#define BMM150_DATA_NUM 6
 
 struct BMM150Setting {
     /*! Control measurement of XYZ axes */
