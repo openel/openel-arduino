@@ -138,7 +138,7 @@ ReturnCode SensorM5StackGrayMPU6886::fncGetValLst(HALComponent *pHALComponent, f
         *(*valueList+(i*14)+12) = (int16_t)(imu_data[i].value.gyro_z_l | (imu_data[i].value.gyro_z_h << 8));
         *(*valueList+(i*14)+13) = (int16_t)(imu_data[i].value.temp_l | (imu_data[i].value.temp_h << 8));
     }
-    **num = data_number * DATA_NUM;
+    **num = data_number * MPU6886_DATA_NUM;
 
     return HAL_OK;
 }
@@ -173,7 +173,7 @@ ReturnCode SensorM5StackGrayMPU6886::fncGetTimedValLst(HALComponent *pHALCompone
         *(*valueList+(i*14)+13) = (int16_t)(imu_data[i].value.temp_l | (imu_data[i].value.temp_h << 8));
     }
     **timeValue = (unsigned int)millis();
-    **num = data_number * DATA_NUM;
+    **num = data_number * MPU6886_DATA_NUM;
 
     return HAL_OK;
 }

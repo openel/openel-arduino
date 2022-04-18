@@ -78,7 +78,7 @@
 #define AtR     0.0174533
 #define Gyro_Gr 0.0010653
 
-#define DATA_NUM 14
+#define MPU6886_DATA_NUM 14
 
 typedef union {
     uint8_t raw[14];
